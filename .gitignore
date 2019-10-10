@@ -1,0 +1,4 @@
+*.log
+*.apk
+.idea
+blogproject_env
