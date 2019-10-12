@@ -1,4 +1,5 @@
 *.log
 *.apk
 .idea
+.pyc
 blogproject_env

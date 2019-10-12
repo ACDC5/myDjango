@@ -23,8 +23,9 @@ import blog.views as ve
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^blog', ve.myPage),  #由于目前只有一个app, 方便起见, 就不设置include了
-    url(r'^(?P<my_args>\d+)/$', ve.detail), #匹配路径前面的数字，如果匹配成功进入试图
+    # url(r'^(?P<my_args>\d+)/$', ve.detail), #匹配路径前面的数字，如果匹配成功进入试图
     url(r'^dev1',ve.sqlQuery),
     url(r'^test',ve.myTemplate),
-    url(r'^home$',ve.home)
+    url(r'^home$',ve.home),
+    url(r'^(?P<id>\d+)/$', ve.demo) #P<id>即使一个参数
 ]
