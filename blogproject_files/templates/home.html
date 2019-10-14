@@ -5,7 +5,7 @@
     {% for post in post_list %} <!-- post_list来自view -->
         <section class="post">
             <header class="post-header">
-                <h2 class="post-title">'{% url "demo" id=post.id %}'>{{ post.title }}</h2>
+                <h2 class="post-title">{{ post.title }}</h2>
                 <h2 class="post-title">{{ post.id }}</h2>
                 <h2 class="post-title">{{ post.excerpt }}</h2>
                                  <h2 class="post-title">{{ post.modified_time }}</h2>
@@ -21,7 +21,6 @@
                         {{ post.content }}
                     </p>
                 </div>
-             <a class="pure-button" href='{% url "demo" id=post.id %}'>Read More</a>
         </section>
     {% endfor %}
 </div><!-- /.blog-post -->
